@@ -59,12 +59,12 @@
 #_8{
     background-color: red !important;
     grid-row: 7/9;
-    grid-column: 5/7
+    grid-column: 5/9;
 }
 
 #_9
 {
     background-color: aqua !important;
-    grid-row: 5/9;
+    grid-row: 5/7;
     grid-column:7/9 ;
 }

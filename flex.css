@@ -1,5 +1,5 @@
 :root{
-    --col_width:20%;
+    --col_width:20vw;
     --col_height:100vh;
 }
 
@@ -23,33 +23,54 @@
     gap:20px;
     height: var(--col_height);
 }
-#col_2 
+
+#col_2
 {
     display: flex;
-    width:calc(var(--col_width)*3);
-    flex-direction: column;
-    gap:20px;
     height: var(--col_height);
+    width: calc(var(--col_width)*4);
+    flex-direction: column;
+    gap: 20px;
 }
-#col_3{
+
+
+#row_1{
+    width: 100%;
+    height:calc(var(--col_height)*3/4);
     display: flex;
-    width: var(--col_width);
-    flex-direction: column;
-    gap:20px;
-    height: var(--col_height);
+    gap: 20px;
 }
-#row_1,#row_3{
+
+#row_2
+{
+    width: 100%;
     height: calc(var(--col_height)/4);
+    display: flex;
+    gap: 20px;
+}
+
+#sub_col_1{
+    width: calc(100% - var(--col_width));
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#sub_row_1{
     width: 100%;
     display: flex;
     gap: 20px;
 }
-#row_2
-{
-    height: calc(var(--col_height)/2);
-    width: 100%;
-    background-color: blue;
+
+#sub_col_2{
+    width: calc(var(--col_width));
+    height: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
 .item_1{
     width: 100%;
     background-color: aqua;
@@ -57,6 +78,29 @@
 }
 .item_2{
     width: 50%;
-    background-color: red;
+    height: 25vh;
+    background-color: brown;
+}
+.item_3{
+    width: 100%;
     height: 100%;
+    background-color: cadetblue;
+}
+
+.item_4{
+    width: 100%;
+    height:calc(var(--col_height)/4) ;
+    background-color: green;
+}
+
+.item_5{
+    width: 25vw;
+    height: 100%;
+    background-color: blue;
+}
+
+.item_6{
+    width: 100%;
+    height: 100%;
+    background-color: burlywood;
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="./grid.css"> -->
-     <link rel="stylesheet" href="./flex.css">
+     <link rel="stylesheet" href="./table.css">
 </head>
 <body>
     <!-- <div id="grid">
@@ -19,28 +19,49 @@
         <div id="_8"></div>
         <div id="_9"></div>
     </div> -->
-    <div id="flex">
+    <!-- <div id="flex">
         <div id="col_1">
             <div class="item_1"></div>
             <div class="item_1"></div>
         </div>
         <div id="col_2">
             <div id="row_1">
-                <div class="item_2"></div>
-                <div class="item_2"></div>
+                <div id="sub_col_1">
+                    <div id="sub_row_1">
+                    <div class="item_2"></div>
+                    <div class="item_2"></div>
+                    </div>
+                    <div class="item_3"></div>
+                </div>
+                <div id="sub_col_2">
+                    <div class="item_1"></div>
+                    <div class="item_4"></div>
+                </div>
             </div>
             <div id="row_2">
-                
-            </div>
-            <div id="row_3">
-                <div class="item_2"></div>
-                <div class="item_2"></div>
+               <div class="item_5"></div>
+               <div class="item_6"></div>
             </div>
         </div>
-        <div id="col_3">
-            <div class="item_1"></div>
-            <div class="item_1"></div>
-        </div>
-    </div>
+    </div> -->
+    <table id="table">
+        <tr id="row_1">
+            <th rowspan="2"><div class="item_1"></div></th>
+            <th colspan="2"><div class="item_2"></div></th>
+            <th colspan="2"><div class="item_2"></div></th>
+            <th rowspan="2"><div class="item_1"></div></th>
+        </tr>
+        <tr id="row_2">
+            <th rowspan="2" colspan="4" class="col_2"><div class="item_3"></div></th>
+        </tr>
+        <tr id="row_3">
+            <th rowspan="2"><div class="item_1"></div></th>
+            <th class="col_2"><div class="item_4"></div></th>
+        </tr>
+        <tr id="row_4">
+            <th colspan="2"><div class="item_4"></div></th>
+            <th colspan="3"><div class="item_5"></div></th>
+        </tr>
+    </table>
 </body>
 </html>
